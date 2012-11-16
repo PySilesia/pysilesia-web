@@ -73,6 +73,8 @@
 # Setting to turn on featured images for blog posts. Defaults to False.
 #
 # BLOG_USE_FEATURED_IMAGE = True
+BLOG_SLUG = ''
+
 
 # If ``True``, users will be automatically redirected to HTTPS
 # for the URLs specified by the ``SSL_FORCE_URL_PREFIXES`` setting.
@@ -243,7 +245,7 @@ TEMPLATE_DIRS = (os.path.join(PROJECT_ROOT, "templates"),)
 ################
 
 INSTALLED_APPS = (
-    "pysilesia",
+    "pysilesia-theme",
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
