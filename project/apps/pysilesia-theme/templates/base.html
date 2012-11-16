@@ -128,6 +128,10 @@ $(function() {
     <a href="http://www.djangoproject.com">Django</a>
     <span class="separator">|</span>
     {% trans "Theme by" %} <a href="http://twitter.github.com/bootstrap/">Bootstrap</a>
+    <span class="separator">|</span>
+    {% trans "Created by" %} <a href="http://natcam.pl">Natcam</a>
+    <span class="separator">|</span>
+    {% trans "Hosting by" %} <a href="http://megiteam.pl">Megiteam</a>
     {% ifinstalled mezzanine.mobile %}
     <span class="separator">|</span>
     <a href="{% url set_device "mobile" %}?next={{ request.path }}">{% trans "View Mobile Site" %}</a>
