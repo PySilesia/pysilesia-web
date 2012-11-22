@@ -74,6 +74,7 @@
 #
 # BLOG_USE_FEATURED_IMAGE = True
 BLOG_SLUG = ''
+SLUGIFY = 'django.template.defaultfilters.slugify'
 
 
 # If ``True``, users will be automatically redirected to HTTPS
