@@ -5,13 +5,13 @@ COMPRESS_ENABLED = True
 
 DATABASES = {
     'default': {
-    'ENGINE': 'django.db.backends.postgresql_psycopg2',  # Add 'postgresql_psycopg2', 'postgresql', 'mysql', 'sqlite3' or 'oracle'.
-    'NAME': 'pg_9351',                      # Or path to database file if using sqlite3.
-    'USER': '',                      # Not used with sqlite3.
-    'PASSWORD': 'Glos ma wegiel i stal',                  # Not used with sqlite3.
-    'HOST': '',                      # Set to empty string for localhost. Not used with sqlite3.
-    'PORT': '',                      # Set to empty string for default. Not used with sqlite3.
-    }
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',  # Add 'postgresql_psycopg2', 'postgresql', 'mysql', 'sqlite3' or 'oracle'.
+        'NAME': 'pg_9430',                      # Or path to database file if using sqlite3.
+        'USER': 'pg_9430a',                      # Not used with sqlite3.
+        'PASSWORD': 'Slask\ spiewa',                  # Not used with sqlite3.
+        'HOST': 'pysilesia.megiteam.pl',                      # Set to empty string for localhost. Not used with sqlite3.
+        'PORT': '5436',                      # Set to empty string for default. Not used with sqlite3.
+        }
 }
 
 CACHES = {
@@ -28,7 +28,6 @@ DEFAULT_FROM_EMAIL = 'noreply@pysilesia.org'
 EMAIL_HOST_USER='noreply@pysilesia.org'
 EMAIL_HOST_PASSWORD='IPpOsk7GJriAHOChvhHT'
 EMAIL_USE_TLS = True
-EMAIL_PORT = 25
 
 COMPRESS_OFFLINE = True
 
