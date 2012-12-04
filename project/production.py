@@ -23,10 +23,10 @@ CACHES = {
 }
 
 EMAIL_HOST = 'pysilesia.megiteam.pl'
-SERVER_EMAIL = 'noreply@pysilesia.megiteam.pl'
-DEFAULT_FROM_EMAIL = 'noreply@pysilesia.megiteam.pl'
-EMAIL_HOST_USER='noreply@pysilesia.megiteam.pl'
-EMAIL_HOST_PASSWORD=''
+SERVER_EMAIL = 'noreply@pysilesia.org'
+DEFAULT_FROM_EMAIL = 'noreply@pysilesia.org'
+EMAIL_HOST_USER='noreply@pysilesia.org'
+EMAIL_HOST_PASSWORD='IPpOsk7GJriAHOChvhHT'
 EMAIL_USE_TLS = True
 EMAIL_PORT = 25
 
