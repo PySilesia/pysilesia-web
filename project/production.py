@@ -43,6 +43,7 @@ try:
 except ImportError:
     pass
 
+ALLOWED_HOSTS = ('pysilesia.org',)
 
 ####################
 # DYNAMIC SETTINGS #
