@@ -1,3 +1,11 @@
+body{
+    padding-top: 85px;
+}
+
+.line2-menu{
+    margin-top: 5px;
+}
+
 .brand img {
     box-shadow: none;
 }
