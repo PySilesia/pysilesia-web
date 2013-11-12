@@ -43,7 +43,7 @@ try:
 except ImportError:
     pass
 
-ALLOWED_HOSTS = ('pysilesia.org',)
+ALLOWED_HOSTS = ('pysilesia.org', 'www.pysilesia.org')
 
 ####################
 # DYNAMIC SETTINGS #
