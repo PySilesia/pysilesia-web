@@ -43,7 +43,7 @@ try:
 except ImportError:
     pass
 
-ALLOWED_HOSTS = (',pysilesia.org', '2618.rev.megiteam.pl')
+ALLOWED_HOSTS = (',pysilesia.org', '2618.rev.megiteam.pl', '.pysilesia.megiteam.pl)
 
 ####################
 # DYNAMIC SETTINGS #
