@@ -118,27 +118,33 @@
 </div>
 
 <footer>
-<div class="container">
-{% page_menu "pages/menus/footer.html" %}
-<p>
-    {% trans "Powered by" %}
-    <a href="http://mezzanine.jupo.org">Mezzanine</a>{% ifinstalled cartridge.shop %},
-    <a href="http://cartridge.jupo.org">Cartridge</a>{% endifinstalled %}
-    {% trans "and" %}
-    <a href="http://www.djangoproject.com">Django</a>
-    <span class="separator">|</span>
-    {% trans "Theme by" %} <a href="http://twitter.github.com/bootstrap/">Bootstrap</a>
-    {% ifinstalled mezzanine.mobile %}
-    <span class="separator">|</span>
-    <a href="{% url "set_device" "mobile" %}?next={{ request.path }}">{% trans "View Mobile Site" %}</a>
-    {% endifinstalled %}
-</p>
-</div>
-<div>
-<a href="http://natcam.pl"><img alt="software development" src="{{ STATIC_URL }}img/logo_natcam.png"></a>
-&nbsp;&nbsp;
-<a href="http://megiteam.pl"><img alt="hosting" src="{{ STATIC_URL }}img/logo_megiteam.png"></a>
-</div>
+
+    <div class="container">
+        <div class="social-icons clearfix">
+            <a href="http://twitter.com/pysilesia" target="_blank"><div class="twitter-hover social-slide"></div></a>
+            <a href="http://facebook.com/pysilesia" target="_blank"><div class="facebook-hover social-slide"></div></a>
+            <a href="https://plus.google.com/105109763268349389167" rel="publisher" target="_blank"><div class="google-hover social-slide"></div></a>
+        </div>
+        {% page_menu "pages/menus/footer.html" %}
+        <p>
+            {% trans "Powered by" %}
+            <a href="http://mezzanine.jupo.org">Mezzanine</a>{% ifinstalled cartridge.shop %},
+            <a href="http://cartridge.jupo.org">Cartridge</a>{% endifinstalled %}
+            {% trans "and" %}
+            <a href="http://www.djangoproject.com">Django</a>
+            <span class="separator">|</span>
+            {% trans "Theme by" %} <a href="http://twitter.github.com/bootstrap/">Bootstrap</a>
+            {% ifinstalled mezzanine.mobile %}
+            <span class="separator">|</span>
+            <a href="{% url "set_device" "mobile" %}?next={{ request.path }}">{% trans "View Mobile Site" %}</a>
+            {% endifinstalled %}
+        </p>
+    </div>
+    <div>
+        <a href="http://natcam.pl"><img alt="software development" src="{{ STATIC_URL }}img/logo_natcam.png"></a>
+        &nbsp;&nbsp;
+        <a href="http://megiteam.pl"><img alt="hosting" src="{{ STATIC_URL }}img/logo_megiteam.png"></a>
+    </div>
 </footer>
 
 {% include "includes/footer_scripts.html" %}

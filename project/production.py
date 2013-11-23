@@ -26,7 +26,7 @@ EMAIL_HOST = 'pysilesia.megiteam.pl'
 SERVER_EMAIL = 'noreply@pysilesia.org'
 DEFAULT_FROM_EMAIL = 'noreply@pysilesia.org'
 EMAIL_HOST_USER='noreply@pysilesia.org'
-EMAIL_HOST_PASSWORD='IPpOsk7GJriAHOChvhHT'
+EMAIL_HOST_PASSWORD=''
 EMAIL_USE_TLS = True
 
 COMPRESS_OFFLINE = True
