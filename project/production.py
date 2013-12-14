@@ -1,18 +1,21 @@
+import dj_database_url
 from project.settings import *
 DEBUG = False
 TEMPLATE_DEBUG = DEBUG
 COMPRESS_ENABLED = True
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',  # Add 'postgresql_psycopg2', 'postgresql', 'mysql', 'sqlite3' or 'oracle'.
-        'NAME': 'pg_9430',                      # Or path to database file if using sqlite3.
-        'USER': 'pg_9430a',                      # Not used with sqlite3.
-        'PASSWORD': 'Slask\ spiewa',                  # Not used with sqlite3.
-        'HOST': 'pysilesia.megiteam.pl',                      # Set to empty string for localhost. Not used with sqlite3.
-        'PORT': '5436',                      # Set to empty string for default. Not used with sqlite3.
-        }
-}
+#DATABASES = {
+#    'default': {
+#        'ENGINE': 'django.db.backends.postgresql_psycopg2',  # Add 'postgresql_psycopg2', 'postgresql', 'mysql', 'sqlite3' or 'oracle'.
+#        'NAME': 'pg_9430',                      # Or path to database file if using sqlite3.
+#        'USER': 'pg_9430a',                      # Not used with sqlite3.
+#        'PASSWORD': 'Slask\ spiewa',                  # Not used with sqlite3.
+#        'HOST': 'pysilesia.megiteam.pl',                      # Set to empty string for localhost. Not used with sqlite3.
+#        'PORT': '5436',                      # Set to empty string for default. Not used with sqlite3.
+#        }
+#}
+
+DATABASES = {'default': dj_database_url.config()}
 
 CACHES = {
         'default': {
@@ -25,8 +28,8 @@ CACHES = {
 EMAIL_HOST = 'pysilesia.megiteam.pl'
 SERVER_EMAIL = 'noreply@pysilesia.org'
 DEFAULT_FROM_EMAIL = 'noreply@pysilesia.org'
-EMAIL_HOST_USER='noreply@pysilesia.org'
-EMAIL_HOST_PASSWORD=''
+EMAIL_HOST_USER = 'noreply@pysilesia.org'
+EMAIL_HOST_PASSWORD = get_env("EMAIL_HOST_PASSWORD")
 EMAIL_USE_TLS = True
 
 COMPRESS_OFFLINE = True

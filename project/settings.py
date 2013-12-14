@@ -1,4 +1,14 @@
 # -*- coding: utf-8 -*-
+import os
+
+def get_env(key, val_type=str):
+    try:
+        value = os.environ[key]
+    except KeyError as e:
+        from django.core.exceptions import ImproperlyConfigured
+        raise ImproperlyConfigured("You should set {0} in env".format(key))
+    return val_type(value)
+
 ######################
 # MEZZANINE SETTINGS #
 ######################
@@ -142,8 +152,11 @@ SITE_ID = 1
 USE_I18N = True
 
 # Make this unique, and don't share it with anybody.
-SECRET_KEY = "25891a09-ee3f-4552-a697-4b7adbef52042d024d24-b4cc-4274-96f0-a9ea66656fe192d07040-ba8b-4a97-a286-fde5379abd95"
-NEVERCACHE_KEY = "25891a09324234234234#@$@-4b7adbef52042d024d24-b4cc-4274-96f0-a9ea66656fe192d07040-ba8b-4a97-a286-fde5379abd95"
+SECRET_KEY = get_env("SECRET_KEY")
+NEVERCACHE_KEY = get_env("NEVERCACHE_KEY")
+
+#SECRET_KEY = "25891a09-ee3f-4552-a697-4b7adbef52042d024d24-b4cc-4274-96f0-a9ea66656fe192d07040-ba8b-4a97-a286-fde5379abd95"
+#NEVERCACHE_KEY = "25891a09324234234234#@$@-4b7adbef52042d024d24-b4cc-4274-96f0-a9ea66656fe192d07040-ba8b-4a97-a286-fde5379abd95"
 
 # Tuple of IP addresses, as strings, that:
 #   * See debug comments, when DEBUG is true
