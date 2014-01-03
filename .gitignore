@@ -4,3 +4,9 @@
 .DS_Store
 .coverage
 local_settings.py
+.idea
+bin
+parts
+eggs
+develop-eggs
+.installed.cfg
