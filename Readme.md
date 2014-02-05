@@ -8,6 +8,7 @@ Project uses buildout (http://buildout.org)
 
 1. python bootstrap.py
 2. bin/buildout -c development.cfg / production.cfg # depending on environment
-3. bin/django syncdb
-4. bin/django migrate
-5. bin/django runserver
+3. configure environment variables (see in settings.py and production.py)
+4. bin/django syncdb
+5. bin/django migrate
+6. bin/django runserver
