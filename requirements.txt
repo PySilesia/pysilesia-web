@@ -1,5 +1,5 @@
-Django==1.6.1
-psycopg2==2.5.1
-Mezzanine==3.0.4
-dj_database_url==0.2.2
-Pillow = 2.3.0
+Django==1.6.5
+psycopg2==2.5.3
+Mezzanine==3.1.9
+dj_database_url==0.3.0
+Pillow==2.5.1
